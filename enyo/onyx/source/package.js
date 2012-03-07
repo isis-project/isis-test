@@ -1,0 +1,20 @@
+enyo.depends(
+	"css/",
+	"Animator.js",
+	"transform.js",
+	"Icon.js",
+	"Button.js",
+	"IconButton.js",
+	"Checkbox.js",
+	"FloatingLayer.js",
+	"Popup.js",
+	"Grabber.js",
+	"Groupbox.js",
+	"Input.js",
+	"InputDecorator.js",
+	"RadioButton.js",
+	"RadioGroup.js",
+	"ToggleButton.js",
+	"Toolbar.js",
+	"Slideable.js"
+);
