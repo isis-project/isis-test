@@ -8,10 +8,8 @@ QT       += core gui webkit
 
 TARGET = isis-test
 TEMPLATE = app
-
+INCLUDEPATH += $$(LUNA_STAGING)/include/QtWebKit
+LIBS += -L$$(LUNA_STAGING)/lib
 
 SOURCES += main.cpp
 
-HEADERS  +=
-
-FORMS    +=
