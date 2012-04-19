@@ -1,0 +1,14 @@
+Source: isistest
+Section: webOS
+Priority: extra
+Maintainer: Anupam <anupam.kaul@palm.com>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/isis-project/isis-test
+#Vcs-Git: git://git.debian.org/collab-maint/isistest.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/isistest.git;a=summary
+
+Package: isistest
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description:

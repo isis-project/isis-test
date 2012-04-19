@@ -13,3 +13,7 @@ LIBS += -L$$(LUNA_STAGING)/lib
 
 SOURCES += main.cpp
 
+debtarget.target = deb
+debtarget.commands = dpkg-buildpackage -rfakeroot
+
+
