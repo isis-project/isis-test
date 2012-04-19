@@ -8,7 +8,7 @@
 
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
-export DEB_STAGING_BINDIR=debian/isis-test/usr/bin
+export DEB_STAGING_BINDIR=debian/isistest/usr/bin
 
 %:
 	dh $@ 
@@ -16,6 +16,8 @@ export DEB_STAGING_BINDIR=debian/isis-test/usr/bin
 .PHONY: override_dh_auto_build override_dh_auto_test override_dh_install
 
 override_dh_auto_build:
+
+override_dh_auto_configure:
 
 override_dh_auto_test:
 
@@ -28,6 +30,9 @@ override_dh_auto_install:
 override_dh_installdirs:
 	mkdir -p $(DEB_STAGING_BINDIR)
 	install -m 444 ./isis-test  $(DEB_STAGING_BINDIR)
+
+# this is temporary till we fix the dependencies
+override_dh_shlibdeps:
 
 #override_dh_clean:
 
