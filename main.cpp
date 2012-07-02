@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     QWebView view;
     view.resize(1024, 768);
     view.page()->settings()->setAttribute(QWebSettings::PluginsEnabled, true);
-    QString browserAppUrl = QString("file://")+QDir::currentPath()+QString("/../isis-browser/index.html?enyoPath=../enyo-1.0/framework&debug");
+    QString browserAppUrl = QString("file://")+QDir::currentPath()+QString("/../isis-browser/index.html?enyoPath=../enyo-1.0/framework&debug&haveBrowserAdapter=true");
 
     QStringList args = a.arguments();
     if (args.count() > 1)
